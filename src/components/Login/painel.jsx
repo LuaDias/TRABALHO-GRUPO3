@@ -1,7 +1,7 @@
 import React from 'react';
-import Funcionarios from '../Funcionarios/funcionarios';
+import Funcionarios from '../Funcionarios/Funcionarios';
 import Clientes from '../Clientes/clientes';
-import Quartos from '../Quartos/quartos';
+import Quartos from '../Quartos/Quartos';
 
 function Painel() {
    return (

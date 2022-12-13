@@ -1,10 +1,12 @@
 import React from 'react';
-import { Routes, Route }  from 'react-router-dom'
-import Painel from './painel';
+import styles from './login.module.css';
 
 const Login=() =>{
 
-   return 
+   return(
+     <div className={styles.loginTeste}>test
+     </div>
+   )
 }
 
 export default Login;
