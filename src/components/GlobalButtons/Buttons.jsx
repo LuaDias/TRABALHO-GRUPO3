@@ -9,10 +9,10 @@ function Buttons() {
           <button>Deletar</button>
         </Link>
         <Link to={"get"}>
-          <button>Atualizar</button>
+          <button>Adicionar</button>
           </Link>
         <Link to={"put"}>
-          <button>Adicionar</button>
+          <button>Atualizar</button>
         </Link>
     </div>
   )

@@ -1,0 +1,65 @@
+{
+  "clientes": [
+    {
+      "id": 1,
+      "nome": "Isabela Martiz",
+      "email": "isabela@gmail.com",
+      "data": "12/01/2022"
+    },
+    {
+      "id": 2,
+      "nome": "Json Santos",
+      "email": "json@gmail.com",
+      "data": "23/12/2022"
+    },
+    {
+      "id": 3,
+      "nome": "Nathalia Rodrigues",
+      "email": "nathalia@gmail.com",
+      "data": "12/12/2022"
+    }
+  ],
+  "fucionarios": [
+    {
+      "id": 1,
+      "login": "Carlos Alberto",
+      "usuario": "carlos123",
+      "cpf": 15478965478,
+      "turno": "Manhã",
+      "funcao": "cozinheiro"
+    },
+    {
+      "id": 2,
+      "login": "Luiza Costa",
+      "usuario": "luiza123",
+      "cpf": 145678912,
+      "turno": "Tarde",
+      "funcao": "camareira"
+    },
+    {
+      "id": 3,
+      "login": "Luiz Costa",
+      "usuario": "luiz123",
+      "cpf": 1459875612,
+      "turno": "noite",
+      "funcao": "jardineiro"
+    }
+  ],
+  "Quarto": [
+    {
+      "id": 1,
+      "quarto": "suite Bela vista",
+      "descricao": "Grande suite de frente pro mar "
+    },
+    {
+      "id": 2,
+      "quarto": "suite atena",
+      "descricao": "Suite com uma bela cama queen e uma banheira de tirar o folego"
+    },
+    {
+      "id": 3,
+      "quarto": "suite de luxo",
+      "descricao": "Perfeita para para sua lua de mel"
+    }
+  ]
+}

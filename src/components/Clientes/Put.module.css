@@ -1,0 +1,39 @@
+.putForm h1{
+    background-color: #0a2b2b;
+    color: #FFFF;
+    text-align: center;
+    padding-top: 9px;
+    height: 60px;
+}
+
+.putForm p{
+    text-align: center;
+    margin-top: 50px;
+    margin-right: 50px;
+    font-size: 1.5rem;
+}
+.putForm form {
+    width: 700px;
+    height: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    display: grid;
+}
+
+.putForm label{
+    display: grid;
+    font-size: 1.5rem;
+}
+
+.putForm button{
+    background-color: #d9d9d9;
+    color: black;
+    border: none;
+    height: 55px;
+    width: 170px;
+    border-radius: 10%;
+    position: relative;
+    margin-top: 55px;
+    
+}
