@@ -1,10 +1,13 @@
 import React from 'react';
-import Styles from './cliente.module.css' 
-import Delet from './Delet';
-
+import Buttons from '../GlobalButtons/Buttons';
+import Styles from './cliente.module.css'
 
 function Clientes() {
-   return <div>Clientes </div>;
+   return  (
+      <div>
+         <Buttons />
+      </div>
+   )
 }
 
 export default Clientes;

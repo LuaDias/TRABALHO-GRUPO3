@@ -1,10 +1,12 @@
 import React from 'react';
-import styles from './login.module.css';
+import styles from './Login.module.css';
+import LoginButton from './LoginButton/LoginButton';
 
 const Login=() =>{
 
    return(
-     <div className={styles.loginTeste}>test
+     <div className={styles.loginTeste}>
+      <LoginButton/>
      </div>
    )
 }

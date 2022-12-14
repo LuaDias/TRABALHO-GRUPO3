@@ -2,19 +2,25 @@ import React from 'react'
 
 function Delet() {
   return (
-        /*<form action='post'>
+        <form>
             <select name="" id="">
                 <option value=""></option>
             </select>
-            <label htmlFor={nome}>Nome do cliente</label>
-            <input id={nome} name={nome} type="text" />
-            <label>E-mail do cliente</label>
-            <input type="text" />
-            <label>Data de inscrição</label>
-            <input type="text" />
-        </form>*/
-        <p></p>
-      )
+            
+            <label htmlFor='nome'>
+              Nome do cliente
+            <input id='nome' name='nome' type='text' />
+            </label>
+
+            <label>E-mail do cliente
+              <input type='text' />
+            </label>
+            <label>Data de inscrição
+            <input type='text' />
+            </label>
+        </form>
+  )
+  
 }
 
 export default Delet

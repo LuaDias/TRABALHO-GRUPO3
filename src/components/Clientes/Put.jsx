@@ -2,7 +2,8 @@ import React from 'react'
 
 function Put() {
   return (
-    <div>Put</div>
+    <h1>teste</h1>
+   
   )
 }
 

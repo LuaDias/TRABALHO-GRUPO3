@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Get() {
+function GetFuncionarios() {
   return (
     <h1>get</h1>
   )
 }
 
-export default Get
+export default GetFuncionarios

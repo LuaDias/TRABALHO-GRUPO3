@@ -1,7 +1,13 @@
 import React from 'react';
+import Buttons from '../GlobalButtons/Buttons';
 
 function Quartos() {
-   return <div>Quartos</div>;
+   return (
+      <div>
+         <Buttons />
+      </div>
+   )
+   
 }
 
 export default Quartos;
