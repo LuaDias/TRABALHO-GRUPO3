@@ -1,4 +1,4 @@
-.putForm h1{
+.putForm h1 {
     background-color: #0a2b2b;
     color: #FFFF;
     text-align: center;
@@ -6,27 +6,37 @@
     height: 60px;
 }
 
-.putForm p{
+.putForm p {
     text-align: center;
     margin-top: 50px;
-    margin-right: 50px;
     font-size: 1.5rem;
 }
+
 .putForm form {
     width: 700px;
     height: 980px;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
-    display: grid;
+    /* display: grid; */
 }
 
-.putForm label{
+.putForm label {
     display: grid;
-    font-size: 1.5rem;
+    font-size: 24px;
+    margin-top: 20px;
 }
 
-.putForm button{
+.putForm input,
+select {
+
+    width: 458px;
+    height: 49px;
+    background-color: #d9d9d9;
+    border: none;
+}
+
+.putForm button {
     background-color: #d9d9d9;
     color: black;
     border: none;
@@ -35,5 +45,5 @@
     border-radius: 10%;
     position: relative;
     margin-top: 55px;
-    
+
 }
