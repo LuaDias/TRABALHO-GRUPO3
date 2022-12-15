@@ -4,8 +4,8 @@ import Styles from './cliente.module.css'
 
 function Clientes() {
    return  (
-      <div className={Styles.clientes}>
-         <Buttons/>
+      <div>
+         <Buttons />
       </div>
    )
 }

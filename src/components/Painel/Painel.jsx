@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Funcionarios from '../Funcionarios/Funcionarios';
-import Clientes from '../Clientes/Clientes';
+import Clientes from '../Clientes/clientes';
 import Quartos from '../Quartos/Quartos';
 import PainelButton from './PainelButton/PainelButton';
 
