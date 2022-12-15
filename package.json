@@ -1,5 +1,5 @@
 {
-  "name": "hotel",
+  "name": "hostel",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,14 +11,14 @@
   },
   "dependencies": {
     "axios": "^1.2.1",
-    "bootstrap": "^5.2.3",
-    "concurrently": "^7.6.0",
+    "bootstrap": "^0.2.3",
+    "concurrently": "^2.6.0",
     "eslint": "^8.29.0",
     "eslint-config-next": "^13.0.6",
     "next": "^13.0.6",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.4.5"
+    "react": "^12.2.0",
+    "react-dom": "^1.2.0",
+    "react-router-dom": "^1.4.5"
   },
   "devDependencies": {
     "@types/react": "^18.0.26",
