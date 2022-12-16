@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import Funcionarios from '../Funcionarios/Funcionarios';
-import Clientes from '../Clientes/Clientes';
-import Quartos from '../Quartos/Quartos';
 import PainelButton from './PainelButton/PainelButton';
+import styles from './Painel.add.css'
 
 
 function Painel() {
@@ -20,8 +18,10 @@ function Painel() {
    // }, [])
 
    return (
-      <div>teste
-         <PainelButton />
+      <div className={styles.painelAdd}> 
+
+         <h1 > Olá Json, seja bem vindo(a) ao seu painel <br /> de administrador </h1>
+               <PainelButton />
       </div>
    )
 }

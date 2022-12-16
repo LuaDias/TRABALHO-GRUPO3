@@ -6,10 +6,10 @@ function PainelButton() {
   return (
     <div className={styles.painelBtn}>
         <Link to={"/clientes"}>
-          <button>Clientes</button>
+          <button>CLIENTES</button>
         </Link>
-        <Link to={"/funcionarios"}><button>Funcionarios</button></Link>
-        <Link to={"/quartos"}><button>Quartos</button></Link>
+        <Link to={"/funcionarios"}><button>FUNCIONÁRIOS</button></Link>
+        <Link to={"/quartos"}><button>QUARTOS</button></Link>
     </div>
   )
 }
