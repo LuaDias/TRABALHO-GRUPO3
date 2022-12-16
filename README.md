@@ -1,5 +1,13 @@
 # TRABALHO-GRUPO3
+
+
+
+<img src="https://user-images.githubusercontent.com/114230660/208192611-4ac647c7-d7a5-4e35-a6d3-e217878f4e64.png" width="450px"  />
+
+
 **Hotel bss (entre céu e mar) se baseia em uma plataforma de login, cadastro e controle dos cliente pela parte da administração  onde o mesmo poderá realizar os métodos:**
+
+
 
 - GET = Listar
 * POST = Adicionar
