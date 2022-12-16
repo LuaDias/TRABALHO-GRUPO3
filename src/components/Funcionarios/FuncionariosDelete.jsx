@@ -1,14 +1,14 @@
 import React from 'react'
+import styles from './Put.module.css'
 import axios from "axios";
 import { useEffect, useState } from "react";
 
 
 function FuncionariosDelete() {
-
-  let [cliente] = useState([]);
+  let [funcionario] = useState([]);
 
   function Selects(ar) {
-    ar.unshift("Selecione o funcionário")
+    ar.unshift("Selecione o nome do funcionário")
     $genero.innerHTML = ""
     ar.forEach((e, i) => {
       let op = document.createElement("option")
@@ -21,7 +21,6 @@ function FuncionariosDelete() {
       $genero.appendChild(op)
     })
   }
-
   useEffect(() => {
     axios.get("http://localhost:3000/funcionarios").then(e => {
       let nomes = []
@@ -31,26 +30,31 @@ function FuncionariosDelete() {
   }, [])
 
   useEffect(() => {
-    Selects(cliente)
-  }, [cliente])
+    Selects(funcionario)
+  }, [funcionario])
 
   function mudar() {
     axios.get("http://localhost:3000/funcionarios?nome=" + $genero.value).then(elemento => {
       let obj = elemento.data[0]
       $nome.value = obj.nome
-      $email.value = obj.email
-      $data.value = obj.data
+      $usuario.value = obj.usuario
+      $cpf.value = obj.cpf
+      $turno.value = obj.turno
+      $funcao.value = obj.funcao
       $btclick.sid = obj.id
+      
+
     })
   }
-
   function Deletar() {
 
     let obj = {
       nome: $nome.value,
-      email: $email.value,
-      data: $data.value,
-      // genero: $genero.value,
+      usuario: $usuario.value,
+      cpf: $cpf.value,
+      turno: $turno.value,
+      funcao: $funcao.value,
+      genero: $genero.value,
     }
 
     axios.delete("http://localhost:3000/funcionarios/" + $btclick.sid, obj);
@@ -60,40 +64,37 @@ function FuncionariosDelete() {
     window.location.reload()
 
   }
-
-
-
-
   return (
-    <section>
-    <header style={{background:"#0A2B2B",height: "140px", width: "100%"}}>      
-      <h1 style={{color:"white", textAlign:"center",paddingTop:"50px"}}>FUNCIONÁRIOS</h1>
-      </header>
-
-    <p style={{textAlign: "center",marginTop: "50px",fontSize: "1.5rem"}}>SELECIONE O FUNCIONÁRIO A SER DELETADO</p>
-    <form style={{display:"grid", justifyContent:"center"}}>
-      <br />
+    <section className={styles.putFunc}>
+      <h1>FUNCIONÁRIOS</h1>
+      <p>SELECIONE O FUNCIONÁRIO A SER REMOVIDO</p>
+    <form>      
       <select id="$genero" onChange={mudar}>
-        <option value="Isabela Martiz">Isabela Martiz</option>
+        <option value="Carlos Alberto">Carlos Alberto</option>
       </select>
-
-      <label style={{display:"grid", marginTop:"15px"}}>
-        Nome do funcionário
-        <input style={{width: "458px",height: "49px",margin:"5px",background: "#d9d9d9",border: "none"}} id='$data' type='text' />
+            
+      <label>
+         Nome
+        <input id='$nome' name='nome' type='text' />
       </label>
-      <label style={{display:"grid"}}>E-mail do funcionário
-      <input style={{width: "458px",height: "49px",margin:"5px",background: "#d9d9d9",border: "none"}} id='$data' type='text' />
+      <label>Usuário
+        <input id='$usuario' type='text' />
       </label>
-      <label style={{display:"grid"}}>Data de inscrição
-        <input style={{width: "458px",height: "49px",margin:"5px",background: "#d9d9d9",border: "none"}} id='$data' type='text' />
+       <label>CPF
+        <input id='$cpf' type='text' />
       </label>
-      <button style={{background: "#d9d9d9",color: "black",border: "none", width:"200px", height: "50px", marginTop:"20px",
-      borderRadius:"8px", }} id="$btclick" onClick={Deletar}>Excluir</button>
+      <label>Função
+      <input id='$funcao' type='text' />
+      </label>
+      <label>Turno
+      <input id='$turno' type='text' />
+      </label>
+      <button id="$btclick" onClick={Deletar}>Deletar</button>
     </form>
-  </section>
-
+    </section>
+   
   )
-  
+
 }
 
 export default FuncionariosDelete

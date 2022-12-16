@@ -1,10 +1,10 @@
 {
   "clientes": [
     {
-      "id": 1,
       "nome": "Isabela Martiz",
       "email": "isabela@gmail.com",
-      "data": "12/01/2022"
+      "data": "12/01/2022",
+      "id": 1
     },
     {
       "id": 2,
@@ -50,8 +50,7 @@
       "nome": "suíte bela vista",
       "descricao": "Grande suite de frente pro mar ",
       "id": 1
-    },
-    {
+    },{
       "id": 2,
       "nome": "suite atena",
       "descricao": "Suite com uma bela cama queen e uma banheira de tirar o folego"

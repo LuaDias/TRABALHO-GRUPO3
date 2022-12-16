@@ -1,8 +1,6 @@
-import React from "react";
+import styles from './Put.module.css'
 import axios from "axios";
 import { useEffect, useState } from "react";
-
-
 
 function Delet() {
 
@@ -56,37 +54,32 @@ function Delet() {
 
     axios.delete("http://localhost:3000/clientes/" + $btclick.sid, obj);
 
-    alert('Cliente removido com sucesso!')
+    alert('Cliente atualizado com sucesso!')
 
     window.location.reload()
 
   }
 
   return (
-    <section>
-      <header style={{background:"#0A2B2B",height: "140px", width: "100%"}}>      
-        <h1 style={{color:"white", textAlign:"center",paddingTop:"50px"}}>CLIENTES</h1>
-        </header>
-
-      <p style={{textAlign: "center",marginTop: "50px",fontSize: "1.5rem"}}>SELECIONE O CLIENTE A SER REMOVIDO</p>
-      <form style={{display:"grid", justifyContent:"center"}}>
-        <br />
+    <section className={styles.putForm}>
+      <h1>CLIENTES</h1>
+      <p>SELECIONE O CLIENTE A SER DELETADO</p>
+      <form>
         <select id="$genero" onChange={mudar}>
           <option value="Isabela Martiz">Isabela Martiz</option>
         </select>
 
-        <label style={{display:"grid", marginTop:"15px"}}>
+        <label>
           Nome do cliente
-          <input style={{width: "458px",height: "49px",margin:"5px",background: "#d9d9d9",border: "none"}} id='$data' type='text' />
+          <input id='$nome' name='nome' type='text' />
         </label>
-        <label style={{display:"grid"}}>E-mail do cliente
-        <input style={{width: "458px",height: "49px",margin:"5px",background: "#d9d9d9",border: "none"}} id='$data' type='text' />
+        <label>E-mail do cliente
+          <input id='$email' type='text' />
         </label>
-        <label style={{display:"grid"}}>Data de inscrição
-          <input style={{width: "458px",height: "49px",margin:"5px",background: "#d9d9d9",border: "none"}} id='$data' type='text' />
+        <label>Data de inscrição
+          <input id='$data' type='text' />
         </label>
-        <button style={{background: "#d9d9d9",color: "black",border: "none", width:"200px", height: "50px", marginTop:"20px",
-        borderRadius:"8px", }} id="$btclick" onClick={Deletar}>REMOVER</button>
+        <button id="$btclick" onClick={Deletar}>Remover</button>
       </form>
     </section>
 
