@@ -19,46 +19,49 @@
       "data": "12/12/2022"
     }
   ],
-  "fucionarios": [
+  "funcionarios": [
     {
-      "id": 1,
-      "login": "Carlos Alberto",
+      "nome": "Carlos Alberto",
       "usuario": "carlos123",
-      "cpf": 15478965478,
+      "cpf": "15478965478",
       "turno": "Manhã",
-      "funcao": "cozinheiro"
+      "funcao": "cozinheiro",
+      "genero": "Carlos Alberto",
+      "id": 1
     },
     {
-      "id": 2,
-      "login": "Luiza Costa",
+      "nome": "Luiza Costa",
       "usuario": "luiza123",
-      "cpf": 145678912,
+      "cpf": "145678912",
       "turno": "Tarde",
-      "funcao": "camareira"
+      "funcao": "camareira",
+      "genero": "Luiza teste2",
+      "id": 2
     },
     {
       "id": 3,
-      "login": "Luiz Costa",
+      "nome": "Luiz Costa",
       "usuario": "luiz123",
       "cpf": 1459875612,
       "turno": "noite",
       "funcao": "jardineiro"
     }
   ],
-  "Quarto": [
+  "Quartos": [
     {
-      "id": 1,
-      "quarto": "suite Bela vista",
-      "descricao": "Grande suite de frente pro mar "
+      "nome": "suíte bela vista",
+      "descricao": "Grande suite de frente pro mar ",
+      "genero": "suite bela vista",
+      "id": 1
     },
     {
       "id": 2,
-      "quarto": "suite atena",
+      "nome": "suite atena",
       "descricao": "Suite com uma bela cama queen e uma banheira de tirar o folego"
     },
     {
       "id": 3,
-      "quarto": "suite de luxo",
+      "nome": "suite de luxo",
       "descricao": "Perfeita para para sua lua de mel"
     }
   ]
