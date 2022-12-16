@@ -54,7 +54,7 @@ function Delet() {
       // genero: $genero.value,
     }
 
-    axios.delet("http://localhost:3000/clientes/" + $btclick.sid, obj);
+    axios.delete("http://localhost:3000/clientes/" + $btclick.sid, obj);
 
     alert('Cliente deletado com sucesso!')
 
@@ -64,24 +64,29 @@ function Delet() {
 
   return (
     <section>
-      <h1>CLIENTES</h1>
-      <p>SELECIONE O CLIENTE A SER DELETADO</p>
-      <form>
+      <header style={{background:"#0A2B2B",height: "140px", width: "100%"}}>      
+        <h1 style={{color:"white", textAlign:"center",paddingTop:"50px"}}>CLIENTES</h1>
+        </header>
+
+      <p style={{textAlign: "center",marginTop: "50px",fontSize: "1.5rem"}}>SELECIONE O CLIENTE A SER REMOVIDO</p>
+      <form style={{display:"grid", justifyContent:"center"}}>
+        <br />
         <select id="$genero" onChange={mudar}>
           <option value="Isabela Martiz">Isabela Martiz</option>
         </select>
 
-        <label>
+        <label style={{display:"grid", marginTop:"15px"}}>
           Nome do cliente
-          <input id='$nome' name='nome' type='text' />
+          <input style={{width: "458px",height: "49px",margin:"5px",background: "#d9d9d9",border: "none"}} id='$data' type='text' />
         </label>
-        <label>E-mail do cliente
-          <input id='$email' type='text' />
+        <label style={{display:"grid"}}>E-mail do cliente
+        <input style={{width: "458px",height: "49px",margin:"5px",background: "#d9d9d9",border: "none"}} id='$data' type='text' />
         </label>
-        <label>Data de inscrição
-          <input id='$data' type='text' />
+        <label style={{display:"grid"}}>Data de inscrição
+          <input style={{width: "458px",height: "49px",margin:"5px",background: "#d9d9d9",border: "none"}} id='$data' type='text' />
         </label>
-        <button id="$btclick" onClick={Deletar}>Excluir</button>
+        <button style={{background: "#d9d9d9",color: "black",border: "none", width:"200px", height: "50px", marginTop:"20px",
+        borderRadius:"8px", }} id="$btclick" onClick={Deletar}>REMOVER</button>
       </form>
     </section>
 
