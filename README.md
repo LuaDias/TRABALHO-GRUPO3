@@ -1,11 +1,11 @@
 # TRABALHO-GRUPO3
 **Hotel bss (entre céu e mar) se baseia em uma plataforma de login, cadastro e controle dos cliente pela parte da administração  onde o mesmo poderá realizar os métodos:**
-```
+
 - GET = Listar
 * POST = Adicionar
 + PUT = Editar
 - DELETE = Excluir
-```
+
 
 ## Tema 
 **Hotel**
