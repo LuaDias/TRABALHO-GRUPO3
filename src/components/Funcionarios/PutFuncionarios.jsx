@@ -55,7 +55,7 @@ function PutFuncionarios() {
       cpf: $cpf.value,
       turno: $turno.value,
       funcao: $funcao.value,
-      genero: $genero.value,
+      // genero: $genero.value,
     }
 
     axios.put("http://localhost:3000/funcionarios/" + $btclick.sid, obj);

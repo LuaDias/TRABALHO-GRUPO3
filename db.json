@@ -26,7 +26,6 @@
       "cpf": "15478965478",
       "turno": "Manhã",
       "funcao": "cozinheiro",
-      "genero": "Carlos Alberto",
       "id": 1
     },
     {
@@ -35,7 +34,6 @@
       "cpf": "145678912",
       "turno": "Tarde",
       "funcao": "camareira",
-      "genero": "Luiza teste2",
       "id": 2
     },
     {
@@ -51,7 +49,6 @@
     {
       "nome": "suíte bela vista",
       "descricao": "Grande suite de frente pro mar ",
-      "genero": "suite bela vista",
       "id": 1
     },
     {

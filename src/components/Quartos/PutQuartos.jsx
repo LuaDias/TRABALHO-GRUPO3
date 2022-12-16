@@ -50,7 +50,6 @@ function PutQuartos() {
     let obj = {
       nome: $nome.value,
       descricao: $descricao.value,
-      genero: $genero.value,
     }
 
     axios.put("http://localhost:3000/quartos/" + $btclick.sid, obj);

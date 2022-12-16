@@ -1,7 +1,23 @@
 import React from 'react'
 import styles from './Get.module.css'
+import axios from 'axios';
 
 function GetFuncionarios() {
+  const addInfo = async () => {
+    const post = {
+      nome: $nome.value,
+      usuario: $usuario.value,
+      cpf: $cpf.value,
+      turno: $turno.value,
+      funcao: $funcao.value,
+    };
+
+    await axios.post("http://localhost:3000/funcionarios/", post);
+
+    alert("ADICIONADO COM SUCESSO!");
+
+    window.location.reload()
+  }
   return (
     <section className={styles.getFunc}>
       <h1>FUNCIONÁRIOS</h1>
@@ -22,7 +38,7 @@ function GetFuncionarios() {
       <label>Turno
       <input id='$turno' type='text' />
       </label>
-      <button>Adicionar</button>
+      <button onClick={addInfo}>Adicionar</button>
     </form>
     </section>
   )

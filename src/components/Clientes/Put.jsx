@@ -9,7 +9,7 @@ function Put() {
   function Selects(ar) {
     ar.unshift("Selecione o nome do cliente")
     $genero.innerHTML = ""
-    ar.forEach((e, i) => {
+    ar.forEach((e, i) => { 
       let op = document.createElement("option")
       if (i == 0) {
         op.setAttribute("disabled", 'true');
