@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import PainelButton from './PainelButton/PainelButton';
 import styles from './Painel.add.css'
 
-
 function Painel() {
 
    // let [lista, setLista] = useState([]);
@@ -18,9 +17,8 @@ function Painel() {
    // }, [])
 
    return (
-      <div className={styles.painelAdd}> 
-
-         <h1 > Olá Json, seja bem vindo(a) ao seu painel <br /> de administrador </h1>
+      <div className = {styles.painelAdd}> 
+         <h1> Olá Json,<br /> seja bem vindo(a) ao seu painel <br /> de administrador </h1>
                <PainelButton />
       </div>
    )
