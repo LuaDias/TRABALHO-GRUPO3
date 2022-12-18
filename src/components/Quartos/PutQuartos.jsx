@@ -39,9 +39,8 @@ function PutQuartos() {
       let obj = elemento.data[0]
       $nome.value = obj.nome
       $descricao.value = obj.descricao
+      $imagem.value = obj.imagem
       $btclick.sid = obj.id
-      
-
     })
   }
 
@@ -50,6 +49,7 @@ function PutQuartos() {
     let obj = {
       nome: $nome.value,
       descricao: $descricao.value,
+      imagem: $imagem.value,
     }
 
     axios.put("http://localhost:3000/quartos/" + $btclick.sid, obj);
@@ -64,21 +64,24 @@ function PutQuartos() {
     <section className={styles.formQuartos}>
       <h1>QUARTOS</h1>
       <p>SELECIONE QUARTO A SER ATUALIZADO</p>
-    <form>      
-      <select id="$genero" onChange={mudar}>
-        <option value="suite bela vista">suite bela vista</option>
-      </select>
-            
-      <label>
-         Nome do quarto
-        <input id='$nome' type='text' />
-      </label>
-      <label>
-        Descrição
-        <input id='$descricao' type='text' />
-      </label>
-      <button id="$btclick" onClick={Atualizar}>Atualizar</button>
-    </form>
+      <form>
+        <select id="$genero" onChange={mudar}>
+          <option value="suite bela vista">suite bela vista</option>
+        </select>
+        <label>
+          Nome do quarto
+          <input id='$nome' type='text' />
+        </label>
+        <label>
+          Descrição
+          <input id='$descricao' type='text' />
+        </label>
+        <label>
+          Link da imagem
+          <input id='$imagem' type="img" />
+        </label>
+        <button id="$btclick" onClick={Atualizar}>Atualizar</button>
+      </form>
     </section>
   )
 }

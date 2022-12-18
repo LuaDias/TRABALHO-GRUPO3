@@ -10,6 +10,7 @@ function GetFuncionarios() {
       cpf: $cpf.value,
       turno: $turno.value,
       funcao: $funcao.value,
+      imagem: "../src/assets/img/perfil.jpg"
     };
 
     await axios.post("http://localhost:3000/funcionarios/", post);
@@ -21,25 +22,25 @@ function GetFuncionarios() {
   return (
     <section className={styles.getFunc}>
       <h1>FUNCIONÁRIOS</h1>
-    <form>            
-      <label>
-         Nome
-        <input id='$nome' name='nome' type='text' />
-      </label>
-      <label>Usuário
-        <input id='$usuario' type='text' />
-      </label>
-       <label>CPF
-        <input id='$cpf' type='text' />
-      </label>
-      <label>Função
-      <input id='$funcao' type='text' />
-      </label>
-      <label>Turno
-      <input id='$turno' type='text' />
-      </label>
-      <button onClick={addInfo}>Adicionar</button>
-    </form>
+      <form>
+        <label>
+          Nome
+          <input id='$nome' name='nome' type='text' />
+        </label>
+        <label>Usuário
+          <input id='$usuario' type='text' />
+        </label>
+        <label>CPF
+          <input id='$cpf' type='text' />
+        </label>
+        <label>Função
+          <input id='$funcao' type='text' />
+        </label>
+        <label>Turno
+          <input id='$turno' type='text' />
+        </label>
+        <button onClick={addInfo}>Adicionar</button>
+      </form>
     </section>
   )
 }

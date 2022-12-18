@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import axios from 'axios';
 import Buttons from '../GlobalButtons/Buttons';
 import ItemsCard from './QuaItemsCard';
+import Banner from './Banner';
 
 function Quartos() {
    let [lista, setLista] = useState([]);
@@ -19,6 +20,7 @@ function Quartos() {
 
    return (
       <div>
+         <Banner />
          <ItemsCard lista={lista} />
          <Buttons />
       </div>

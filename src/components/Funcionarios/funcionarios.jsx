@@ -4,12 +4,14 @@ import { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import axios from 'axios';
 import ItemsCard from './FuncItemsCard';
+import Banner from './Banner';
+
 
 function Funcionarios() {
    let [lista, setLista] = useState([]);
 
    useEffect(() => {
-      let url = 'http://localhost:3000/funcionarios';
+      let url = 'http://localhost:3000/funcionarios/';
 
       const getPosts = async () => {
          const { data: res } = await axios.get(url);
@@ -20,6 +22,7 @@ function Funcionarios() {
 
    return (
       <div>
+         <Banner />
          <ItemsCard lista={lista} />
          <Buttons />
       </div>
@@ -27,4 +30,3 @@ function Funcionarios() {
 }
 
 export default Funcionarios;
-//up

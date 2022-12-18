@@ -5,21 +5,21 @@
       "email": "isabela@gmail.com",
       "data": "12/01/2022",
       "id": 1,
-      "imagem": "./src/assets/img/perfil.jpg"
+      "imagem": "../src/assets/img/perfil.jpg"
     },
     {
       "id": 2,
       "nome": "Json Santos",
       "email": "json@gmail.com",
       "data": "23/1,2/2022",
-      "imagem": "./src/assets/img/perfil.jpg"
+      "imagem": "../src/assets/img/perfil.jpg"
     },
     {
       "id": 3,
       "nome": "Nathalia Rodrigues",
       "email": "nathalia@gmail.com",
       "data": "12/1,2/2022",
-      "imagem": "./src/assets/img/perfil.jpg"
+      "imagem": "../src/assets/img/perfil.jpg"
     }
   ],
   "funcionarios": [
@@ -29,7 +29,8 @@
       "cpf": "15478965478",
       "turno": "Manhã",
       "funcao": "cozinheiro",
-      "id": 1
+      "id": 1,
+      "imagem": "../src/assets/img/perfil.jpg"
     },
     {
       "nome": "Luiza Costa",
@@ -37,7 +38,8 @@
       "cpf": "145678912",
       "turno": "Tarde",
       "funcao": "camareira",
-      "id": 2
+      "id": 2,
+      "imagem": "../src/assets/img/perfil.jpg"
     },
     {
       "id": 3,
@@ -45,40 +47,28 @@
       "usuario": "luiz123",
       "cpf": 1459875612,
       "turno": "noite",
-      "funcao": "jardineiro"
-    },
-    {
-      "nome": "teste",
-      "usuario": "teste",
-      "cpf": "teste",
-      "turno": "teste",
-      "funcao": "teste",
-      "id": 4
-    },
-    {
-      "nome": "teste",
-      "usuario": "teste",
-      "cpf": "teste",
-      "turno": "teste",
-      "funcao": "teste",
-      "id": 5
+      "funcao": "jardineiro",
+      "imagem": "../src/assets/img/perfil.jpg"
     }
   ],
   "Quartos": [
     {
       "nome": "suíte bela vista",
       "descricao": "Grande suite de frente pro mar ",
-      "id": 1
+      "id": 1,
+      "imagem": "https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
     },
     {
       "id": 2,
       "nome": "suite atena",
-      "descricao": "Suite com uma bela cama queen e uma banheira de tirar o folego"
+      "descricao": "Suite com uma bela cama queen e uma banheira de tirar o folego",
+      "imagem": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
     },
     {
       "id": 3,
       "nome": "suite de luxo",
-      "descricao": "Perfeita para para sua lua de mel"
+      "descricao": "Perfeita para para sua lua de mel",
+      "imagem": "https://images.unsplash.com/photo-1582719508461-905c673771fd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80"
     }
   ]
 }

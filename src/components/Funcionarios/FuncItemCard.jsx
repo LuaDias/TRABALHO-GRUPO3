@@ -7,17 +7,17 @@ function FuncItemCard({ imagem, nome, usuario, cpf, turno, funcao }) {
       <Card.Img variant="top" src={imagem} />
       <Card.Body>
         <Card.Title>{nome}</Card.Title>
-        <Card.Text>
-          {usuario}
+        <Card.Text>Usuario:
+          {' ' + usuario}
         </Card.Text>
-        <Card.Text>
-          {cpf}
+        <Card.Text>CPF:
+          {' ' + cpf}
         </Card.Text>
-        <Card.Text>
-          {turno}
+        <Card.Text>Turno:
+          {' ' + turno}
         </Card.Text>
-        <Card.Text>
-          {funcao}
+        <Card.Text>Função:
+          {' ' + funcao}
         </Card.Text>
       </Card.Body>
     </Card>

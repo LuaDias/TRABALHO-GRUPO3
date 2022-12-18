@@ -8,7 +8,7 @@ function ItemCard({ imagem, nome, descricao }) {
       <Card.Body>
         <Card.Title>{nome}</Card.Title>
         <Card.Text>
-          {descricao}
+          {descricao.slice(0, 100)}...
         </Card.Text>
       </Card.Body>
     </Card>

@@ -39,8 +39,7 @@ function DeletQuartos() {
       $nome.value = obj.nome
       $descricao.value = obj.descricao
       $btclick.sid = obj.id
-      
-
+      $imagem.value = obj.imagem
     })
   }
   function Deletar() {
@@ -49,6 +48,7 @@ function DeletQuartos() {
       nome: $nome.value,
       descricao: $descricao.value,
       genero: $genero.value,
+      imagem: $imagem.value,
     }
 
     axios.delete("http://localhost:3000/quartos/" + $btclick.sid, obj);
@@ -62,24 +62,26 @@ function DeletQuartos() {
     <section className={styles.formQuartos}>
       <h1>QUARTOS</h1>
       <p>SELECIONE QUARTO A SER REMOVIDO</p>
-    <form>      
-      <select id="$genero" onChange={mudar}>
-        <option value="suite bela vista">suite bela vista</option>
-      </select>
-            
-      <label>
-         Nome do quarto
-        <input id='$nome' type='text' />
-      </label>
-      <label>
-        Descrição
-        <input id='$descricao' type='text' />
-      </label>
-      <button id="$btclick" onClick={Deletar}>Deletar</button>
-    </form>
+      <form>
+        <select id="$genero" onChange={mudar}>
+          <option value="suite bela vista">suite bela vista</option>
+        </select>
+        <label>
+          Nome do quarto
+          <input id='$nome' type='text' />
+        </label>
+        <label>
+          Descrição
+          <input id='$descricao' type='text' />
+        </label>
+        <label>Link da imagem
+          <input id='$imagem' type="img" />
+        </label>
+        <button id="$btclick" onClick={Deletar}>Deletar</button>
+      </form>
     </section>
   )
-  
+
 }
 
 export default DeletQuartos

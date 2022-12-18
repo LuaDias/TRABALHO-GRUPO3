@@ -10,13 +10,3 @@
 .ItemsCard .card {
   box-shadow: 4px 4px 4px rgba(0, 0, 0, .2)
 }
-
-.homeCliente h1{
-    background-color: #0a2b2b;
-    color: #FFFF;
-    font-size: 60px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    padding-top: 10px;
-    height: 110px;
-}

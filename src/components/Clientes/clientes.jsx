@@ -3,8 +3,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import axios from 'axios';
 import Buttons from '../GlobalButtons/Buttons';
 import ItemsCard from './ItemsCard';
-import styles from './ItemsCard.css';
-
+import Banner from './Banner';
 
 function Cliente() {
    let [lista, setLista] = useState([]);
@@ -20,8 +19,8 @@ function Cliente() {
    }, [])
 
    return (
-      <div className={styles.homeCliente}>
-         <h1>CLIENTES</h1>
+      <div>
+         <Banner />
          <ItemsCard lista={lista} />
          <Buttons />
       </div>
