@@ -1,6 +1,5 @@
 import React from 'react'
 import "bootstrap/dist/css/bootstrap.min.css";
-import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Clientes from './components/Clientes/Clientes';
 import Funcionarios from './components/Funcionarios/Funcionarios';
@@ -29,15 +28,15 @@ function App() {
           <Route path="funcionarios/*" element={<Funcionarios />} />
           <Route path="clientes/*" element={<Clientes />} />
           <Route path="quartos/*" element={<Quartos />} />
-          <Route path='clientes/delet' element={<Delet/>} />
+          <Route path='clientes/delet' element={<Delet />} />
           <Route path='clientes/get' element={<Get />} />
-          <Route path='clientes/put' element={<Put/>} />
-          <Route path='funcionarios/delet' element={<FuncionariosDelete/>} />
-          <Route path='funcionarios/get' element={<GetFuncionarios/>} />
-          <Route path='funcionarios/put' element={<PutFuncionarios/>} />
-          <Route path='quartos/delet' element={<DeletQuartos/>} />
-          <Route path='quartos/get' element={<GetQuartos/>} />
-          <Route path='quartos/put' element={<PutQuartos/>} />
+          <Route path='clientes/put' element={<Put />} />
+          <Route path='funcionarios/delet' element={<FuncionariosDelete />} />
+          <Route path='funcionarios/get' element={<GetFuncionarios />} />
+          <Route path='funcionarios/put' element={<PutFuncionarios />} />
+          <Route path='quartos/delet' element={<DeletQuartos />} />
+          <Route path='quartos/get' element={<GetQuartos />} />
+          <Route path='quartos/put' element={<PutQuartos />} />
         </Routes>
       </BrowserRouter>
     </div>

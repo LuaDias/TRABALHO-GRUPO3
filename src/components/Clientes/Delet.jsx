@@ -54,7 +54,7 @@ function Delet() {
 
     axios.delete("http://localhost:3000/clientes/" + $btclick.sid, obj);
 
-    alert('Cliente atualizado com sucesso!')
+    alert('Cliente removido com sucesso!')
 
     window.location.reload()
 

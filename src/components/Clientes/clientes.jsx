@@ -1,40 +1,29 @@
-import React from 'react';
+import { useState, useEffect } from 'react';
+import 'bootstrap/dist/css/bootstrap.css';
 import axios from 'axios';
 import Buttons from '../GlobalButtons/Buttons';
-import styles from './Cliente.module.css'
-import perfil from '../../assets/img/perfil.jpg'
+import ItemsCard from './ItemsCard';
 
 
+function Cliente() {
+   let [lista, setLista] = useState([]);
 
-function cliente() {
-   
+   useEffect(() => {
+      let url = 'http://localhost:3000/clientes';
 
-   return  (
-         <section className={styles.clienteGet}>
-            <h1>CLIENTES</h1>
-            <div className={styles.divContainer}>
-            <div className={styles.divCards}>
-               <div><img src={perfil} /></div>
-               <div><span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                   Blanditiis quibusdam quaerat harum, rem eum eaque ipsum officia hic.
-                   </span></div>
-            </div>
-            <div className={styles.divCards}>
-               <div><img src={perfil} /></div>
-               <div><span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                   Blanditiis quibusdam quaerat harum, rem eum eaque ipsum officia hic.
-                   </span></div>
-            </div>
-            <div className={styles.divCards}>
-               <div><img src={perfil} /></div>
-               <div><span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                   Blanditiis quibusdam quaerat harum, rem eum eaque ipsum officia hic.
-                   </span></div>
-            </div>
-            </div>
-          <Buttons />
-         </section>
+      const getPosts = async () => {
+         const { data: res } = await axios.get(url);
+         setLista(res);
+      };
+      getPosts();
+   }, [])
+
+   return (
+      <div>
+         <ItemsCard lista={lista} />
+         <Buttons />
+      </div>
    )
 }
 
-export default cliente
+export default Cliente
