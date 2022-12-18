@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import axios from 'axios';
 import Buttons from '../GlobalButtons/Buttons';
 import ItemsCard from './ItemsCard';
+import styles from './ItemsCard.css';
 
 
 function Cliente() {
@@ -19,7 +20,8 @@ function Cliente() {
    }, [])
 
    return (
-      <div>
+      <div className={styles.homeCliente}>
+         <h1>CLIENTES</h1>
          <ItemsCard lista={lista} />
          <Buttons />
       </div>
