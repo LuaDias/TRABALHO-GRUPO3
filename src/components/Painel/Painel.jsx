@@ -7,7 +7,7 @@ import background from '../../assets/img/piscina.jpg'
 function Painel() {
 
    return (
-      <div className={styles.painel} style={{backgroundImage: `url(${background})`,height:"1094px" }}>
+      <div className={styles.painel} style={{backgroundImage: `url(${background})`,height:"1094px",width:"1736" }}>
          <section >
          <form>
          <h1> Olá Json,<br /> seja bem vindo(a) ao seu painel <br /> de administrador </h1>
