@@ -1,24 +1,25 @@
 import styles from './Login.module.css';
 import LoginButton from './LoginButton/LoginButton';
+import background from '../../assets/img/piscinaLogin.jpg'
 
-const Login = () => {
+function Login() {
 
   return (
-    <div className={styles.loginTeste}>
   
+    <div className={styles.loginTeste}  style={{ backgroundImage: `url(${background})`,height:"1094px" }}>
       <form action="">
-      <h1>Login</h1>
+        <h1>Login</h1>
 
-        <label htmlFor="">Usuáro/Email</label>
+        <label>Usuáro/Email</label>
         <input type="email" />
-        <label htmlFor="">Senha</label>
+        <label>Senha</label>
         <input type="password" />
-        
+
         <LoginButton />
 
       </form>
     </div>
-  )
+  );
 }
 
 export default Login;

@@ -1,4 +1,18 @@
 .painel h1{
-    color: pink;
-    background-color: #48dfea;
+    color: #ffffff;
+    
+
+    text-align: center;
+    font-size: 4rem;
+    
+}
+.painel{
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    text-align: center;
+    
+    
+}
+.painel form{
+    padding-top: 8rem;
 }

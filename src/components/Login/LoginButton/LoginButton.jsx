@@ -6,7 +6,7 @@ function LoginButton() {
   return (
     <div>
         <Link to={"painel"} className={styles.loginbtn}>
-          <button>login</button>
+          <button>ENTRAR</button>
         </Link>
     </div>
   )
