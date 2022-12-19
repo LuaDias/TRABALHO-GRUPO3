@@ -1,49 +1,56 @@
-.loginTeste form{
+.loginTeste form {
     background: rgba(0, 0, 0, 0.59);
     display: grid;
-    align-items: center;
-    height: 450px;
-    width: 700px;
+    /* align-items: center; */
+    /* height: 450px; */
+    /* width: 700px; */
     padding: 40px;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    /* justify-content: center; */
     border-radius: 15px;
-    margin-left: 25rem;
-
-
+    /* margin-left: 25rem; */
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
 }
 
-.loginTeste h1{
+.loginTeste h1 {
     text-align: center;
     color: #ffffff;
     font-size: 60px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode',
-     'Lucida Grande', 'Lucida Sans', Arial, sans-serif;    
 }
-.loginTeste label{
-    height:2rem;
+
+.loginTeste label {
+    padding: 5px 0;
     width: 30rem;
     color: #ffffff;
     border: none;
-
 }
-.loginTeste input{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 38px;
+
+.loginTeste input {
+    font-size: 26px;
     line-height: 46px;
     border-radius: 8px;
-    opacity: 0.5;
+    opacity: 0.4;
+    padding: 5px 5px;
+    font-weight: bold;
 }
 
-.loginTeste button{
+.loginTeste button {
     align-items: center;
     margin-top: 2rem;
-    margin-left: 12rem;   
+    margin-left: 160px;
+    transition: .3s
 }
-.loginTeste{
-    padding: 8rem;
-    
+
+.loginTeste button:hover {
+    scale: 1.1;
+}
+
+.loginTeste {
+    /* padding: 200px 60px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 
 }

@@ -5,8 +5,8 @@ import background from '../../assets/img/piscinaLogin.jpg'
 function Login() {
 
   return (
-  
-    <div className={styles.loginTeste}  style={{ backgroundImage: `url(${background})`,height:"1094px" }}>
+
+    <div className={styles.loginTeste} style={{ backgroundImage: `url(${background})`, height: "100vh", backgroundSize: 'cover' }}>
       <form action="">
         <h1>Login</h1>
 
